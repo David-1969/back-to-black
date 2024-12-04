@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Álbum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header principal -->
+    <header class="header-bar">
+        Compact-Disc @
+    </header>
+
+    <!-- Navegação com a barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pesquisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Populares</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main com informações detalhadas do álbum -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Imagem do álbum em formato maior -->
+            <div class="col-md-6">
+                <img id="albumImage" src="back to black.jpeg" alt="Imagem do Álbum" class="img-fluid">
+            </div>
+            <!-- Título e sinopse do álbum -->
+  <h2 id="albumTitle"> Back to Black</h2>
+  <p id="albumDescription"> Lançado em 2006, Back to Black é o segundo e aclamado álbum de estúdio de Amy Winehouse, que catapultou a cantora britânica ao estrelato mundial. Com uma mistura de soul, jazz, R&B e pop, o álbum é marcado por sua sonoridade vintage, evocando os anos 60, mas com um toque moderno e único. As letras de Amy são profundamente pessoais, abordando temas como amor, dor, autodestruição e arrependimento, tudo com uma sinceridade crua que cativou o público. A produção do disco, liderada por Mark Ronson e Salaam Remi, traz um arranjo clássico, com ênfase em metais e piano, complementando a voz rouca e poderosa de Winehouse. Faixas como "Rehab", "Back to Black" e "Love Is a Losing Game" se tornaram imensamente populares e são considerados clássicos da música contemporânea. Back to Black consolidou Amy Winehouse como uma das maiores vocalistas de sua geração, sendo um álbum essencial e influente no cenário musical dos anos 2000. </p>
+ <h2 id="albumTitle">Tracklist</h2>
+ <p id="albumDescription"> <strong>Lado 1:</strong> Rehab -
+    You Know I'm No Good -
+    Me & Mr Jones -
+    Just Friends -
+    Back to Black -
+    Love Is a Losing Game.
+    <p id="albumDescription"> <strong>Lado 2:</strong> Tears Dry on Their Own -
+        Wake Up Alone -
+        Some Unholy War -
+        He Can Only Hold Her -
+        Addicted -
+        You Sent Me Flying / Cherry.</p>
+
+            <div class="col-md-6">
+                <!-- Resumo do álbum -->
+                <h2 id="albumTitle"></h2>
+                <p id="albumDescription"></p>
+
+                <div class="container mt-5">
+                    <h2>Avalie o Álbum</h2>
+            
+                    <!-- Sistema de avaliação de estrelas -->
+                    <div id="starRating" class="d-flex">
+                        <!-- Estrelas serão geradas dinamicamente com JavaScript -->
+                    </div>
+                    <div id="ratingMessage" class="mt-2"></div>
+            
+                    <h4 class="mt-4">Resenha:</h4>
+                    <textarea id="reviewText" class="form-control" rows="4"></textarea>
+                    <button id="submitReview" class="btn btn-primary mt-2">Enviar Resenha</button>
+            
+                    <h4 class="mt-4">Resenhas:</h4>
+                    <div id="reviewsList">
+                        <!-- Resenhas serão exibidas aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
